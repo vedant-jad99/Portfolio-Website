@@ -169,6 +169,7 @@ section {
     margin-top: 40px;
     border-radius: 7px;
     color: azure;
+    transition: 0.2s ease-in;
 }
 
 .about .about-container .download:hover {
