@@ -321,7 +321,7 @@ section {
 
 @media (max-width: 690px) {
     .max-width {
-        padding: 0 23px;
+        padding: 0 10px;
     }
 
     .navbar .menu-btn {
@@ -378,6 +378,10 @@ section {
 
     .about .about-container .right {
         flex: 100%;
+    }
+
+    .page-title {
+        font-size: 45px ;
     }
 
     .experience .continuation {
