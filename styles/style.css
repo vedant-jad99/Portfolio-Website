@@ -27,16 +27,17 @@
     list-style: none;
     display: inline-block;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .navbar .menu li a{
     color: black;
     font-size: x-large;
     font-family: 'Oxygen', sans-serif;
-    padding: 10px;
+    padding: 20px;
     transition: color 0.5s ease;
+    cursor: pointer;
 }
 
 .navbar .menu li a:hover {
@@ -68,7 +69,7 @@
     overflow: hidden;
   }
   
-.cursor {
+.home-container .cursor {
     display: inline-block;
     background-color: #ccc;
     margin-left: 0.1rem;
@@ -110,7 +111,7 @@ section {
     margin-top: 120px;
 }
 
-.about .page-title {
+.page-title {
     position: relative;
     font-family: 'Tourney', cursive;
     font-size: 57px;
@@ -177,6 +178,69 @@ section {
     border-color: rgba(68, 68, 240, 0.74);
 }
 
+.experience .page-title {
+    color: white;
+}
+
+.experience .continuation {
+    display: inline-block;
+    text-decoration: underline 4px;
+}
+
+.experience .link-to-company img {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.experience .experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.experience .experience-container .card{
+    margin-top: 50px;
+    flex: 100%;
+    padding: 40px;
+    border: solid white 2px;
+    border-radius: 10px;
+    transition: 0.3s ease-out;
+}
+
+.experience .experience-container .card h2 {
+    font-family: "Roboto Mono", monospace;
+    font-weight: 900;
+    font-size: 40px;
+    padding: 20px;
+    text-decoration: underline 2px ;
+    text-align: center;
+}
+
+.experience .experience-container .card:hover {
+    transform: scale(1.02);
+}
+
+.experience .experience-container .company {
+    font-size: x-large;
+    padding: 10px;
+}
+
+.experience .experience-container .company-name {
+    font-family: "Prompt", sans-serif;
+}
+
+.experience .experience-container .job {
+    font-family: "Encode Sans SC", sans-serif;
+    padding: 10px;
+}
+
+.experience .experience-container:hover {
+    transition: 0.3s ease-in;
+}
 
 
 @media (max-width: 1140px) {
@@ -247,5 +311,9 @@ section {
 
     .about .about-container .right {
         flex: 100%;
+    }
+
+    .experience .continuation {
+        display: block;
     }
 }
