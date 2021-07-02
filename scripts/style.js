@@ -1,7 +1,7 @@
 const typedText = document.querySelector(".typed-text");
 const cursor = document.querySelector(".cursor");
 
-var words = ["< Welcome >", "< to >", "< my Website >"];
+var words = ["< Welcome >", "< to >", "< my > ", "< Website >"];
 const typingDelay = 200;
 const erasingDelay = 100;
 const nextDelay = 2000; // Delay between current and next text
