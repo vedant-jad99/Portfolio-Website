@@ -10,12 +10,13 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
         <nav class="navbar">
             <div class="max-width">
-                <ul class="menu">
+                <ul class="menu" id="menu">
                     <li class="active"><a>Home</a></li>
                     <li><a>About Me</a></li>
                     <li><a>Experience</a></li>
@@ -23,17 +24,20 @@
                     <li><a>Projects</a></li>
                     <li><a>Contact Me</a></li>
                 </ul>
+                <div class="menu-btn">
+                    <i class="fa fa-navicon" aria-hidden="true" onclick="Toggle()"></i>
+                </div>
             </div>
         </nav>
 
         <section class="home" id="home">
             <div class="max-width">
-                <div class="container">
+                <div class="home-container">
                     <p class="welcome-message typed-text"></p><p class="cursor">&nbsp;</p>
                 </div>  
             </div>
         </section>   
-
+    
         
         <script src="scripts/style.js"></script>
     </body>

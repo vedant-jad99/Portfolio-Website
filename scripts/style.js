@@ -36,6 +36,11 @@ function erase() {
   }
 }
 
+function Toggle() {
+  var ele = document.getElementById("menu");
+  ele.classList.toggle("menu-active");
+}
+
 document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
   if(words.length) setTimeout(type, nextDelay + 250);
 });

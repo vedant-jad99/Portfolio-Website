@@ -35,6 +35,7 @@
     font-size: x-large;
     font-family: 'Oxygen', sans-serif;
     padding: 10px;
+    transition: color 0.5s ease;
 }
 
 .navbar .menu li a:hover {
@@ -42,14 +43,22 @@
     color: white;
 }
 
-.container {
+.navbar .menu-btn {
+    font-size: 23px;
+    cursor: pointer;
+    float: right;
+    margin-left: auto;
+    display: none;
+}
+ 
+.home-container {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-.container p {
+.home-container p {
     font-size: 4rem;
     padding: 0.5rem;
     font-weight: bold;
@@ -89,4 +98,52 @@
     height: 100vh;
     color: white;
     min-height: 500px;
+}
+
+@media (max-width: 960px) {
+    .max-width {
+        padding: 0 50px;
+    }
+
+    .navbar .menu-btn {
+        padding-top: 10px;
+        display: block;
+        z-index: 999;
+    }
+
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: white ;
+        left: -100%;
+        top: 0;
+        text-align: center;
+        transition: 0.3s ease-out;
+    }
+
+    .navbar .menu-active{
+        left: 0;
+        transition: 0.3s ease-in;
+    }
+
+    .navbar .menu li {
+        display: block;
+    }
+
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 0;
+        transition: 0.5s ease-in;
+    }
+
+    .navbar .menu li a:hover { 
+        font-size: 30px;
+        color: black;
+        background-color: white;
+    }
+
+    .home-container p {
+        font-size: 3rem;
+    }
 }
