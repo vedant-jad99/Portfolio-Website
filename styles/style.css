@@ -11,6 +11,7 @@
 }
 
 .navbar {
+    z-index: 999;
     position: fixed;
     background-color: white;
     width: 100%;
@@ -100,8 +101,95 @@
     min-height: 500px;
 }
 
+section {
+    padding: 100px 0;
+}
+
+.about {
+    font-family: 'Source Code Pro', monospace;
+    margin-top: 120px;
+}
+
+.about .page-title {
+    position: relative;
+    font-family: 'Tourney', cursive;
+    font-size: 57px;
+    margin-bottom: 60px;
+    padding-bottom: 10px;
+    align-items: center;
+    text-align: center;
+    text-decoration: underline 4px;
+}
+
+.about .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about-container .left {
+    width: 40%;
+    align-items: center;
+}
+
+.about .about-container .left img {
+    height: 400px;
+    width: 400px;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.about .about-container .right {
+    width: 55%;
+}
+
+.about .about-container .right .text h2 {
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.about .about-container .right .text p {
+    text-align: justify;
+}
+
+.about .about-container .hire-me {
+    font-family: "Encode Sans SC", sans-serif;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.about .about-container .download {
+    font-family: "Encode Sans SC", sans-serif;
+    font-size: 20px;
+    background-color: rgba(68, 68, 240, 0.74);
+    padding: 10px;
+    margin-top: 40px;
+    border-radius: 7px;
+    color: azure;
+}
+
+.about .about-container .download:hover {
+    background-color: white;
+    color: rgba(68, 68, 240, 0.74);
+    border: solid;
+    border-color: rgba(68, 68, 240, 0.74);
+}
+
+
+
+@media (max-width: 1140px) {
+    .about .about-container .left img {
+        height: 350px;
+        width: 350px;
+        object-fit: contain;        
+    }
+}
+
 @media (max-width: 960px) {
     .max-width {
+        max-width: 800px;
         padding: 0 50px;
     }
 
@@ -145,5 +233,19 @@
 
     .home-container p {
         font-size: 3rem;
+    }
+
+    .about .about-container .column {
+        width: 50%;
+    }
+
+    .about .about-container .left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .about .about-container .right {
+        flex: 100%;
     }
 }
