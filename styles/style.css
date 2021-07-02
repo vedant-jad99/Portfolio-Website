@@ -252,10 +252,76 @@ section {
     }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 991px) {
     .max-width {
         max-width: 700px;
         padding: 0 50px;
+    }
+
+    .navbar .menu-btn {
+        padding-top: 10px;
+        display: block;
+        z-index: 999;
+    }
+
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: white ;
+        left: -100%;
+        top: 0;
+        text-align: center;
+        transition: 0.3s ease-out;
+    }
+
+    .navbar .menu-active{
+        left: 0;
+        transition: 0.3s ease-in;
+    }
+
+    .navbar .menu li {
+        display: block;
+    }
+
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 0;
+        transition: 0.5s ease-in;
+    }
+
+    .navbar .menu li a:hover { 
+        font-size: 30px;
+        color: black;
+        background-color: white;
+    }
+
+    .home-container p {
+        font-size: 1.5rem;
+    }
+
+    .about .about-container .column {
+        width: 50%;
+    }
+
+    .about .about-container .left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .about .about-container .right {
+        flex: 100%;
+    }
+
+    .experience .continuation {
+        display: block;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width {
+        padding: 0 23px;
     }
 
     .navbar .menu-btn {
