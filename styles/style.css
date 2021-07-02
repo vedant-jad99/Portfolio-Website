@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar .menu li a{
+    color: black;
+    font-size: x-large;
+    font-family: 'Oxygen', sans-serif;
+    padding: 10px;
+}
+
+.navbar .menu li a:hover {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.container p {
+    font-size: 4rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+.cursor.typing {
+    animation: none;
+  }
+  @keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+  }
+
+.welcome-message {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 90px;
+    color: rgb(238, 255, 0);
+} 
+
+.home {
+    background: url("../images/motion.svg") no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    color: white;
+    min-height: 500px;
+}
