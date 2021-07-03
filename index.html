@@ -15,6 +15,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet"> 
+        
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles/style.css">
     </head>
@@ -88,7 +90,85 @@
                 </div>  
             </div>
         </section>
+
+        <section class="skills" id="skills">
+            <div class="max-width">
+                <h2 class="page-title">
+                    Skills
+                </h2>
+                <br><br>
+                <p>Below are some of my skillsets and tools I am familiar and worked with ...</p>
+                <div class="skills-container">
+                    <div class="slideshow"> 
+                        <div class="column-lang item-show">
+                            <div class="skill-tab"><img src="images/icons8-python.svg"></div>
+                            <div class="text"><h2>Python</h2></div> 
+                        </div>
+                        <div class="column-lang">
+                            <div class="skill-tab"><img src="images/icons8-c++.svg"></div>
+                            <div class="text"><h2>C++</h2></div> 
+                        </div>
+                        <div class="column-lang">
+                            <div class="skill-tab"><img src="images/icons8-html-5.svg"></div>
+                            <div class="text"><h2>HTML</h2></div> 
+                        </div>
+                        <div class="column-lang">
+                            <div class="skill-tab"><img src="images/icons8-css3.svg"></div>
+                            <div class="text"><h2>CSS</h2></div> 
+                        </div>
+                        <div class="column-lang">
+                            <div class="skill-tab"><img src="images/icons8-javascript.svg"></div>
+                            <div class="text"><h2>Javascript</h2></div> 
+                        </div>
+                        <div class="column-lang">
+                            <div class="skill-tab"><img src="images/icons8-sql.svg"></div>
+                            <div class="text"><h2>SQL</h2></div> 
+                        </div>
+                    </div>
+                    <div class="slide-options">
+                        <button id="previous-skill" onclick="moveToPrevLang()">&lt;</button>
+                        <button id="next-skill" onclick="moveToNextLang()">&gt;</button>
+                    </div>
+                </div>  
+                <br>
+                <h2 class="sub-title">Tools</h2>
+                <br>
+                <div class="skills-container">
+                    <div class="slideshow">
+                        <div class="column-tool item-show">
+                            <div class="skill-tab"><img src="images/icons8-git.svg"></div>
+                            <div class="text"><h2>Git</h2></div> 
+                        </div>
+                        <div class="column-tool">
+                            <div class="skill-tab"><img src="images/icons8-mysql-logo.svg"></div>
+                            <div class="text"><h2>MySQL</h2></div> 
+                        </div>
+                        <div class="column-tool">
+                            <div class="skill-tab"><img src="images/icons8-react-native.svg"></div>
+                            <div class="text"><h2>React Native</h2></div> 
+                        </div>
+                        <div class="column-tool">
+                            <div class="skill-tab"><img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" style="height:240px; width:240px;"></div>
+                            <div class="text"><h2>VS Code</h2></div> 
+                        </div>
+                        <div class="column-tool">
+                            <div class="skill-tab"><img src="images/icons8-scikit-learn.svg"></div>
+                            <div class="text"><h2>React Native</h2></div> 
+                        </div>
+                        <div class="column-tool">
+                            <div class="skill-tab"><img src="images/icons8-opencv.svg"></div>
+                            <div class="text"><h2>React Native</h2></div> 
+                        </div>
+                    </div>
+                    <div class="slide-options">
+                        <button id="previous-tool" onclick="moveToPrevTool()">&lt;</button>
+                        <button id="next-tool" onclick="moveToNextTool()">&gt;</button>
+                    </div>
+                </div>  
+            </div>
+        </section>
         
         <script src="scripts/style.js"></script>
+        <script src="scripts/slides.js"></script>
     </body>
 </html>
