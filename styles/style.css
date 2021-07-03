@@ -329,11 +329,100 @@ section {
     color: white;
 }
 
+.project {
+    color: white;
+    display: block;
+}
+
+.project .page-title {
+    color: white;
+}
+
+.project .project-container {
+    font-family: "Prompt", sans-serif;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    overflow: hidden;
+    font-size: larger;
+}
+
+.project .project-container .column-project {
+    padding: 20px;
+    width: 50%;
+}
+
+.project .project-container .project-title {
+    font-size: xx-large;
+    font-family: "Roboto Mono", monospace;
+}
+
+.project .project-container .project-description .made {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.project .project-container .project-lang {
+    display: flex;
+}
+
+.project .project-container .made-red {
+    color: red;
+}
+
+.project .project-container .made-green {
+    color: greenyellow;
+}
+
+.project .project-container .made-blue {
+    color: skyblue;
+}
+ 
+.project .project-container .logo {
+    float: inline-start;
+    color: white;
+    padding: 5px;
+}
+
+.project .more{
+    color: yellow;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.contact .contact-container p {
+    font-size: x-large;
+    text-align: center;
+}
+
+.contact .socials {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 30px;
+}
+
+.contact .socials ul{
+    list-style: none;
+    font-size: xx-large;
+}
+
+.contact .socials li {
+    display: inline-block;
+    align-items: center;
+    padding: 20px 20px 0 20px;
+}
+
+.contact .socials a {
+    color: black;
+}
+
 footer {
     text-align: center;
     background-color: black;
     color: white;
-    padding: 50px 0 50px;
+    padding: 50px 0 70px;
     font-family: "Encode Sans SC", sans-serif;
 }
 
@@ -424,6 +513,16 @@ footer {
         margin: 40px auto 40px auto;
         width: 60%;
     }
+
+    .project .project-container .column-project {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .project .project-container .project-description .made {
+        display: block;
+        margin-right: 10px;
+    }
 }
 
 @media (max-width: 690px) {
@@ -507,5 +606,15 @@ footer {
     .skills .skills-container .column-tool {
         margin: 40px auto 40px auto;
         width: 80%;
+    }
+
+    .project .project-container .column-project {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .project .project-container .project-description .made {
+        display: block;
+        margin-right: 10px;
     }
 }

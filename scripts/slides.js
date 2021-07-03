@@ -43,6 +43,6 @@ function moveToPrevTool () {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    setInterval (moveToNextLang, 5000);
-    setInterval (moveToNextTool, 5000);
+    setInterval (moveToNextLang, 3000);
+    setInterval (moveToNextTool, 3000);
 });
