@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .max-width {
     max-width: 1300px;
     padding: 0 80px;
@@ -38,6 +42,7 @@
     padding: 20px;
     transition: color 0.5s ease;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .navbar .menu li a:hover {
@@ -243,6 +248,11 @@ section {
     transition: 0.3s ease-in;
 }
 
+.skills p {
+    font-family: "Ubuntu", sans-serif;
+    font-size: x-large;
+}
+
 .skills .skills-container {
     font-family: "Prompt", sans-serif;
     text-align: center;
@@ -317,6 +327,14 @@ section {
     text-align: center;
     background-color: black;
     color: white;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 50px 0 50px;
+    font-family: "Encode Sans SC", sans-serif;
 }
 
  
