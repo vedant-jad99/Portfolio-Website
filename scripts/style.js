@@ -2,9 +2,9 @@ const typedText = document.querySelector(".typed-text");
 const cursor = document.querySelector(".cursor");
 
 var words = ["< Welcome >", "< to >", "< my > ", "< Website >"];
-const typingDelay = 200;
-const erasingDelay = 100;
-const nextDelay = 2000;
+const typingDelay = 100;
+const erasingDelay = 50;
+const nextDelay = 500;
 var index = 0;
 var charIndex = 0;
 
@@ -32,7 +32,7 @@ function erase() {
     cursor.classList.remove("typing");
     index++;
     if(index>=words.length) index=0;
-    setTimeout(type, typingDelay + 1100);
+    setTimeout(type, typingDelay + 200);
   }
 }
 

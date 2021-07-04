@@ -300,62 +300,26 @@ section {
     overflow: hidden;
 }
 
-.skills .skills-container .column-lang {
+.skills .skills-container .column {
     margin: 40px auto 40px auto;
-    width: 40%;
-    display: none;
-}
-
-.skills .skills-container .column-tool {
-    margin: 40px auto 40px auto;
-    width: 40%;
-    display: none;
-}
-
-.skills .skills-container .item-show {
-    display: block;
-    animation: fadeVisibility 0.8s;
-}
-@keyframes fadeVisibility {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-        transform: opacity linear;
-    }
-}
-
-.skills .skills-container .slide-options {
+    width: 33%;
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: 0 20px 0 20px;
-    transform: translateY(-650%);
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
 }
 
-.skills .slide-options button {
-    height: 40px;
-    width: 40px;
-    font-size: xx-large;
-    background-color: rgba(233, 233, 233, 0.8);
-    border: 0;
-    border-radius: 50%;
-    cursor: pointer;
-    color: rgb(173, 173, 173);
-}
-
-.skills .skills-container .slideshow {
+.skills .skills-container .skill-tab {
     width: 100%;
-    padding: 10px;
-    margin-top: 20px;
-    align-items: center;
-    overflow: hidden;
 }
 
 .skills .skills-container .text {
     background-color: rgba(233, 233, 233, 0.753);
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
 }
 
 .skills .sub-title {
@@ -403,6 +367,7 @@ section {
 
 .project .project-container .project-lang {
     display: flex;
+    justify-content: center;
 }
 
 .project .project-container .made-red {
@@ -421,6 +386,7 @@ section {
     float: inline-start;
     color: white;
     padding: 5px;
+    font-size: 30px;
 }
 
 .project .more{
@@ -552,18 +518,10 @@ footer {
         display: block;
     }
 
-    .skills .skills-container .left {
-        width: 100%;
-    }
-
-    .skills .skills-container .column-lang {
+    .skills .skills-container .column {
         margin: 40px auto 40px auto;
-        width: 60%;
-    }
-
-    .skills .skills-container .column-tool {
-        margin: 40px auto 40px auto;
-        width: 60%;
+        width: 50%;
+        display: flex;
     }
 
     .project .project-container .column-project {
@@ -652,20 +610,12 @@ footer {
         display: block;
     }
 
-    .skills .skills-container .left{
-        width: 100%;
-    }
-
-    .skills .skills-container .column-lang {
+    .skills .skills-container .column {
         margin: 40px auto 40px auto;
-        width: 80%;
+        width: 100%;
+        display: flex;
     }
     
-    .skills .skills-container .column-tool {
-        margin: 40px auto 40px auto;
-        width: 80%;
-    }
-
     .project .project-container .column-project {
         padding: 20px;
         width: 100%;
