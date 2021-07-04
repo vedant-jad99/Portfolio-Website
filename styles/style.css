@@ -140,6 +140,7 @@ section {
 }
 
 .about .about-container img {
+    display: flex;
     height: 400px;
     width: 400px;
     object-fit: contain;
@@ -217,7 +218,7 @@ section {
     border-color: rgba(68, 68, 240, 0.74);
 }
 
-.about .about-container .download a:hover {
+.about .about-container .download:hover a{
     color: rgba(68, 68, 240, 0.74);
 }
 
