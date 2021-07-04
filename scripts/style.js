@@ -4,7 +4,7 @@ const cursor = document.querySelector(".cursor");
 var words = ["< Welcome >", "< to >", "< my > ", "< Website >"];
 const typingDelay = 200;
 const erasingDelay = 100;
-const nextDelay = 2000; // Delay between current and next text
+const nextDelay = 2000;
 var index = 0;
 var charIndex = 0;
 
