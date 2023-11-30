@@ -7,6 +7,26 @@ const erasingDelay = 50;
 const nextDelay = 500;
 var index = 0;
 var charIndex = 0;
+var scroll_toggle = true;
+
+function scroller() {
+	var ele_list = document.getElementsByClassName("card");
+	var _imgele = document.getElementById("arrow");
+	if (scroll_toggle) {
+		for (let i = 0; i < ele_list.length; i++) {
+			ele_list[i].classList.remove("hide");
+		}
+
+		_imgele.src = "images/up-arrow.png"
+		scroll_toggle = false;
+	} else {
+		for (let i = 2; i < ele_list.length; i++) {
+			ele_list[i].classList.add("hide");
+		}
+		_imgele.src = "images/arrow.png";
+		scroll_toggle = true;
+	}
+}
 
 function type() {
   if (charIndex < words[index].length) {

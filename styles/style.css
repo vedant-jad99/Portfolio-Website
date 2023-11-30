@@ -246,13 +246,30 @@ section {
     color: white;
 }
 
-.experience .experience-container .card{
+.experience .experience-container .card {
     margin-top: 50px;
     flex: 100%;
     padding: 40px;
     border: solid white 2px;
     border-radius: 10px;
     transition: 0.3s ease-out;
+}
+
+.hide {
+	display: none;
+}
+
+.experience .experience-container .scroller {
+	margin-top: 25px;
+	flex: 100%;
+	padding: 10px;
+	text-align: center;
+}
+
+.experience .experience-container .scroller img {
+	height: 25px;
+	width: 25px;
+	cursor: pointer;
 }
 
 .experience .experience-container .card h2 {
@@ -275,6 +292,13 @@ section {
 
 .experience .experience-container .company-name {
     font-family: "Prompt", sans-serif;
+}
+
+.experience .experience-container .logo {
+	height: 22px;
+	width: 25px;
+	margin-top: 5px;
+	margin-left: 10px;
 }
 
 .experience .experience-container .job {

@@ -1,7 +1,7 @@
 const caption = document.querySelector(".caption");
 var about_img = document.querySelectorAll('.image')
 
-var word = ["Software engineering", "Machine learning/AI", "Robotics"];
+var word = ["Software engineering", "Systems programming", "Robotics"];
 const typeDelay = 100;
 const eraseDelay = 50;
 const next = 1000;
